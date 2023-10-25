@@ -1,0 +1,23 @@
+//color utilities
+@each $key, $val in $theme-colors{
+    .bg-#{$key} {
+        background-color: $val
+    }
+    .text-#{$key}{
+        color: $val
+    }
+
+    @if($val != white and $val != black){
+        @for $i from 1 to 9 {
+            .text-#{$key}-light-#{$i}{
+                color: mix(white, $i * 10%)
+            }
+            .bg-#{$key}-light-#{$i}{
+                background-color: mix(white, $i * 10%)
+            }
+        }
+    }
+}
+
+//light variations
+

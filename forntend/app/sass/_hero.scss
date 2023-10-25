@@ -1,0 +1,45 @@
+.hero{
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/hero-home.jpg");
+    position: relative;
+
+    .overlay{
+        position: absolute;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        top:0;
+        left:0;
+        width: 100%;
+        color: white;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.65);
+        height: 100%;
+
+        .headline{
+            font-size: 2rem;
+        }
+        .action-btn{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            
+            
+            .action1{
+                background: orange;
+                border-radius: 0.2rem;
+                padding: 1rem 1.5rem;
+            }
+
+            .action2{
+                border:0.2rem solid orange;
+                border-radius: 0.2rem;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}

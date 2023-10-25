@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-primary {
+  background-color: #431407;
+}
+
+.text-primary {
+  color: #431407;
+}
+
+.bg-secondary {
+  background-color: #fb923c;
+}
+
+.text-secondary {
+  color: #fb923c;
+}
+
+.bg-last {
+  background-color: #fed7aa;
+}
+
+.text-last {
+  color: #fed7aa;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.text-dark {
+  color: black;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.main {
+  min-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero {
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/hero-home.jpg");
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+}
+.hero .overlay .headline {
+  font-size: 2rem;
+}
+.hero .overlay .action-btn {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.hero .overlay .action-btn .action1 {
+  background: orange;
+  border-radius: 0.2rem;
+  padding: 1rem 1.5rem;
+}
+.hero .overlay .action-btn .action2 {
+  border: 0.2rem solid orange;
+  border-radius: 0.2rem;
+  padding: 1rem 1.5rem;
+}
+
+.header {
+  width: 100%;
+}
+.header .header-contacts {
+  width: 100%;
+  height: 3rem;
+  color: white;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-contacts .social-media {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header .header-contacts .social-media .logo {
+  font-size: 25rem;
+}
+.header .header-contacts .social-media .icons {
+  display: flex;
+  font-size: 2rem;
+}
+
+.navbar {
+  height: 4rem;
+  padding: 2rem;
+}
+.navbar nav {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  gap: 2rem;
+  justify-content: right;
+  align-items: center;
+}
+.navbar .page-link {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card-group {
+  display: flex;
+  gap: 1rem;
+  min-width: 95%;
+  margin: 1rem;
+  overflow-x: scroll;
+}
+.card-group .card {
+  min-width: 25rem;
+  height: 30rem;
+  position: relative;
+  background-color: #ffa400;
+  border-radius: 1rem;
+}
+.card-group .card .card-img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 60%;
+}/*# sourceMappingURL=globals.css.map */
