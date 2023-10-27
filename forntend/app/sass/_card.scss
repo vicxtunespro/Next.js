@@ -1,16 +1,18 @@
 .card-group{
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-gap: 1rem;
     min-width: 95%;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: auto;
     margin: 1rem;
-    overflow-x: scroll;
 
+    
     .card{
-        min-width: 25rem;
         height: 30rem;
         position: relative;
         background-color: #ffa400;
         border-radius: 1rem;
+        overflow: hidden;
     
         .card-img{
             position: relative;
@@ -18,5 +20,18 @@
             width: 100%;
             height: 60%;
         }
+        .card-content{
+            padding: 1rem;
+
+            .card-title{
+                padding:1rem auto;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media(max-width: 360px){
+    .card-group{
+        margin: 0;
     }
 }

@@ -12,7 +12,7 @@ export default function ServiceCard({image, title, shortDescription}) {
             />
         </div>
         <div className='card-content'>
-            <h3>{title}</h3>
+            <h3 className="card-title">{title}</h3>
             <p>{shortDescription}</p>
         </div>
     </div>
