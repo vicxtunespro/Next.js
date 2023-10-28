@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.scss'
 
-import { AiFillFacebook, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
+import { AiFillFacebook, AiFillLinkedin, AiFillInstagram, AiOutlineMenu  } from 'react-icons/ai';
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,9 +29,19 @@ export default function RootLayout({ children }) {
             </div>
           </div>
           <div className='navbar desktop bg-last'>
+            <div className='menu-icon'>
+            AiOutlineMenu
+            </div>
             <nav>
               <Link href="#" className='page-link'>Home</Link>
-              <Link href="#" className='page-link'>Services</Link>
+              <div class="dropdown">
+                <Link href="#" className='page-link'>Services</Link>
+                <div className='dorpdown-content'>
+                <Link href="#" className='page-link'>Constraction Services</Link>
+                <Link href="#" className='page-link'>Plubing Services</Link>
+                <Link href="#" className='page-link'>Electrical Services</Link>
+              </div>/
+              </div>
               <Link href="#" className='page-link'>Projects</Link>
               <Link href="#" className='page-link'>About us</Link>
               <Link href="#" className='page-link'>Contact us</Link>
