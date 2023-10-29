@@ -1,10 +1,12 @@
 .hero{
-    height: 40vh;
+    height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-image: url("/hero-home.jpg");
     position: relative;
+
+
 
     .overlay{
         position: absolute;
@@ -21,12 +23,14 @@
         height: 100%;
 
         .headline{
-            font-size: 2rem;
+            font-size: 5vw;
+            @media (max-width: 600px) {
+                font--size: 3rem;
+            }
         }
         .action-btn{
             display: flex;
             gap: 1rem;
-            padding: 1rem 1.5rem;
             
             
             .action1{
@@ -39,6 +43,10 @@
                 border:0.2rem solid orange;
                 border-radius: 0.2rem;
                 padding: 1rem 1.5rem;
+
+                @media(max-width: 480){
+                    padding: 10px;
+                }
             }
         }
     }

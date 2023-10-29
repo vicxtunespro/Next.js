@@ -30,17 +30,18 @@ export default function RootLayout({ children }) {
           </div>
           <div className='navbar desktop bg-last'>
             <div className='menu-icon'>
-            AiOutlineMenu
+            <AiOutlineMenu/>
             </div>
             <nav>
               <Link href="#" className='page-link'>Home</Link>
+              {/* Drop-down */}
               <div class="dropdown">
-                <Link href="#" className='page-link'>Services</Link>
-                <div className='dorpdown-content'>
-                <Link href="#" className='page-link'>Constraction Services</Link>
-                <Link href="#" className='page-link'>Plubing Services</Link>
-                <Link href="#" className='page-link'>Electrical Services</Link>
-              </div>/
+                <Link href="#" className='page-link droper'>Services</Link>
+                  <div className='dropdown-content'>
+                  <Link href="#" className='page-link'>Constraction Services</Link>
+                  <Link href="#" className='page-link'>Plubing Services</Link>
+                  <Link href="#" className='page-link'>Electrical Services</Link>
+                  </div>
               </div>
               <Link href="#" className='page-link'>Projects</Link>
               <Link href="#" className='page-link'>About us</Link>
