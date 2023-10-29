@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <div className='header-contacts bg-primary'>
             <div className='logo'>Andru</div>
             <div className='social-media'>
-            <p className='contacts'>Tel: 0787681472/0758019072</p>
+            <p className='contacts'>Tel: 0787681472</p>
               <div class="icons">
                 <AiFillFacebook/>
                 <AiFillInstagram/>
