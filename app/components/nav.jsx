@@ -25,14 +25,14 @@ const Navbar = () => {
           <Link href="/" className='page-link'>
             Home
           </Link>
-          <Link href="/services" className='page-link'>
+          <Link href="./services" className='page-link'>
             Services
           </Link>
-          <Link href="/projects" className='page-link'>
+          <Link href="./projects" className='page-link'>
             Projects
           </Link>
-          <Link href="/about" className='page-link'>About us</Link>
-          <Link href="/contact" className='page-link'>Contact us</Link>
+          <Link href="./about" className='page-link'>About us</Link>
+          <Link href="./contact" className='page-link'>Contact us</Link>
         </div>
       </div>
     </nav>

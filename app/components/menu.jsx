@@ -22,19 +22,19 @@ export default function menu() {
             <AiOutlineMenu/>
             </div>
             <nav>
-              <Link href="/" className='page-link'>Home</Link>
+              <Link href="./" className='page-link'>Home</Link>
               {/* Drop-down */}
               <div class="dropdown">
-                <Link href="/services" className='page-link'>Services</Link>
+                <Link  className='page-link'>Services</Link>
                   <div className='dorpdown-content'>
-                  <Link href="#" className='drop'>Plubing Services</Link>
-                  <Link href="#" className='drop'>Electrical Services</Link>
-                  <Link href="#" className='drop'>Constraction Services</Link>
+                  <Link  className='drop'>Plubing Services</Link>
+                  <Link  className='drop'>Electrical Services</Link>
+                  <Link  className='drop'>Constraction Services</Link>
                   </div>
               </div>
-              <Link href="/projects" className='page-link'>Projects</Link>
-              <Link href="/about" className='page-link'>About us</Link>
-              <Link href="/contact" className='page-link'>Contact us</Link>
+              <Link  className='page-link'>Projects</Link>
+              <Link  className='page-link'>About us</Link>
+              <Link  className='page-link'>Contact us</Link>
             </nav>
           </div>
         </div>
