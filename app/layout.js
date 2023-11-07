@@ -3,6 +3,7 @@ import './globals.scss'
 
 import { AiFillFacebook, AiFillLinkedin, AiFillInstagram, AiOutlineMenu  } from 'react-icons/ai';
 import Link from 'next/link';
+import Navbar from './components/nav';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-          
+        
         <div className='header'>
           <div className='header-contacts bg-primary'>
             <div className='logo'>Andru</div>
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </div>
-          <div className='navbar desktop bg-last'>
+          <Navbar/>
+          <div className='navbar desktop=menu bg-last'>
             <div className='menu-icon'>
             <AiOutlineMenu/>
             </div>
