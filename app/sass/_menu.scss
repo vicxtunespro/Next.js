@@ -10,6 +10,12 @@
         align-items: center;
         justify-content: space-between;
 
+        .contacts{
+            @media (max-width: 360px) {
+                display: none;
+            }
+        }
+
         .social-media{
             display: flex;
             gap: 2rem;
@@ -24,14 +30,6 @@
                 display: flex;
                 font-size: 2rem;
 
-                @media(max-width: 400px){
-                    position:fixed;
-                    display: inline-block;
-                    top:50vh;
-                    color: $primary;
-                    left: 0;
-                    z-index: 999;
-                }
                 }
             }
         }
@@ -43,6 +41,10 @@
         padding: 0;
         display: flex;
         
+
+        @media (max-width: 610px) {
+            display: none;
+        }
 
         .menu-icon{
             width: 100%;
